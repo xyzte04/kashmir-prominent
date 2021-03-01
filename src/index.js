@@ -131,7 +131,7 @@ var persons = [
     image: "maulana-shaukata-ahmed.png",
     district: "srinagar",
     englishAudioFile: "media/Shaukat ahmed English.m4a",
-    urduAudioFile: "media/Shaukat ahmed English.m4a",
+    urduAudioFile: "media/Maulana Shaukat urdu.m4a",
     content: `Maulana Shaukat Ahmad was the most prominent religious leader of Jamiat-e-Ahle-Hadees. Under his leadership Ahle Hadees grew to have about 15 lakh followers and more than 800 Mosques spread across the valley. He held pro-freedom views and yet he was known to be a liberal who was very vocal against all forms of violence. He openly denounced stone pelting and other such disruptive activities as un-Islamic and went to the extent of issuing a fatwa against them. He was in favour of engaging with the interlocutors appointed by the Centre and despite raised eyebrows from the separatist camp, he held several discussions with them.
 
       In the process, he earned the ire of the likes of Syed Ali Shah Geelani but was undeterred in his ideas. He was believed to be assassinated by militants of LeT in 2011 in an explosion as he parked his car at a regular spot while arriving at his mosque for Friday prayers. Many believe that his strong differences will Syed Ali Shah Geelani played an important role in his killing`,
