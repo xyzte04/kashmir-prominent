@@ -1,0 +1,43 @@
+@import "./styles/variables.scss";
+
+body {
+  margin: 0 !important;
+  background-color: $grey-dark;
+  color: white;
+}
+
+#main-container {
+  overflow: hidden;
+}
+
+h1 {
+  color: $big-text;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.sans-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.serif {
+  font-family: "PT Serif", serif;
+}
+
+.big-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.greyed {
+  color: $grey;
+}

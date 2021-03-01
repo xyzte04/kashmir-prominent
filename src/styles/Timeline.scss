@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+#timeline {
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  color: $grey;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  left: 5%;
+  height: 100px;
+  background: linear-gradient(180deg, $grey-dark 20%, rgba($grey-dark, 0));
+  z-index: 10000;
+
+  .year-tick {
+    // display: inline-block;
+    transition: font-size 0.5s;
+    .tick {
+      width: 1px;
+      border-radius: 0px 0px 2px 2px;
+      height: 10px;
+      margin: 0 auto;
+      margin-bottom: 5px;
+      background-color: $grey;
+      transition: height 0.5s, background-color 0.5s, font-size 0.5s, color 0.5s;
+    }
+    font-size: 0.8rem;
+
+    &.active-year {
+      color: $red-main;
+      font-size: 2rem;
+      .tick {
+        width: 3px;
+        height: 25px;
+        background-color: $red-main;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #timeline {
+    width: 99%;
+    left: 0%;
+    .year-tick {
+      // display: inline-block;
+      transition: font-size 0.5s;
+      .tick {
+        width: 1px;
+        border-radius: 0px 0px 2px 2px;
+        height: 10px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        background-color: $grey;
+        transition: height 0.5s, background-color 0.5s, font-size 0.5s,
+          color 0.5s;
+      }
+      font-size: 0.6rem;
+
+      &.hide-year-phone:not(.active-year) {
+        opacity: 0;
+        font-size: 0rem;
+      }
+
+      &.active-year {
+        .tick {
+        }
+      }
+    }
+  }
+}

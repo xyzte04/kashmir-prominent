@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+.detail-slide {
+  margin-left: 15%;
+  max-width: 800px;
+  line-height: 1.8rem;
+  color: $grey;
+
+  p {
+    margin: 0px;
+  }
+  .person-content {
+    margin: 30px;
+    font-size: 1.3rem;
+  }
+  audio {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .detail-slide {
+    margin-left: 5%;
+    max-width: 90%;
+    line-height: 1.3rem;
+
+    p {
+      margin: 0px;
+    }
+    .person-content {
+      margin: 0px;
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+    audio {
+      margin-left: 30px;
+    }
+  }
+}

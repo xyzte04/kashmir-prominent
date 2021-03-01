@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+.name-slide {
+  p {
+    margin: 0px;
+  }
+  .person-details-big {
+    margin-top: 20%;
+    margin-left: 15%;
+    .person-name {
+      font-size: 7rem;
+      color: $big-text;
+      max-width: 700px;
+    }
+    .person-death-date {
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .name-slide {
+    .person-details-big {
+      text-align: center;
+      margin-left: 0%;
+      .person-name {
+        font-size: 4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "./variables.scss";
+
+#toggle-language {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 100px;
+  text-align: right;
+  background-color: #00000090;
+  border-radius: 0px 5px 5px 0px;
+  z-index: 10000;
+
+  .toggle-language-desc {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 5px;
+    color: $grey;
+  }
+
+  // &:hover {
+  //   // .toggle-option {
+  //   //   left: -10px;
+  //   //   &.active-toggle {
+  //   //     left: 0px;
+  //   //   }
+  //   // }
+  // }
+
+  .toggle-option {
+    background-color: $grey;
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    color: #adacac;
+    z-index: -100;
+    position: relative;
+    left: -20px;
+    transition-property: left 2s;
+    cursor: pointer;
+
+    &.active-toggle {
+      background-color: $red-main;
+      color: white;
+      z-index: 4000;
+      left: 0px;
+
+      &[data-value="english"] {
+        box-shadow: 0px 4px 10px #00000090;
+      }
+      &[data-value="urdu"] {
+        box-shadow: 0px -4px 10px #00000090;
+      }
+    }
+  }
+}
+
+// @media (max-width: 500px) {
+//   #toggle-language {
+//     width: 90px;
+//   }
+// }

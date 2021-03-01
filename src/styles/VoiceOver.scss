@@ -1,0 +1,11 @@
+.voice-over {
+  max-width: 300px;
+  margin-left: 50px;
+}
+
+@media (max-width: 500px) {
+  .voice-over {
+    max-width: 300px;
+    margin-left: 0px;
+  }
+}

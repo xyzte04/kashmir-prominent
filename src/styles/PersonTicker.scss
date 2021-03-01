@@ -1,0 +1,169 @@
+@import "./variables.scss";
+
+$s: 600px;
+
+#person-ticker {
+  pointer-events: none;
+  position: fixed;
+  width: $s;
+  height: $s;
+  overflow: visible;
+  // border: 1px solid red;
+  border-radius: 50%;
+  bottom: -($s / 3);
+  right: -($s / 3);
+  z-index: 10000;
+
+  // bottom: 50px;
+  // right: 10px;
+
+  #ticker-photo-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: black;
+    font-size: 10px;
+
+    .ticker-photo {
+      width: 30px;
+      height: 60px;
+      // background-color: white;
+      position: absolute;
+      transition: transform 1s, top 1s, left 1s;
+      clip-path: circle(25px at center);
+
+      .person-name {
+        position: absolute;
+        top: 0px;
+        color: white;
+      }
+
+      img {
+        height: 100%;
+      }
+
+      &.size-1 {
+        transform: scale(5);
+        z-index: 10001;
+      }
+
+      &.size-2 {
+        transform: scale(0.8);
+        opacity: 0.4;
+      }
+
+      &.size-3 {
+        transform: scale(0.6);
+        opacity: 0.4;
+      }
+
+      &.size-4 {
+        transform: scale(0.2);
+        opacity: 0.4;
+      }
+    }
+
+    .map-outer {
+      .map-container {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+
+        path {
+          stroke: black;
+          stroke-width: 0.2px;
+          fill: rgb(160, 159, 159);
+
+          &.map-highlight,
+          &.map-hover-highlight,
+          &.map-click-highlight {
+            fill: $red-main !important;
+          }
+
+          &.map-district.data-not-available {
+            fill: none;
+          }
+
+          &.map-district-boundaries {
+            pointer-events: none;
+            fill: none;
+            stroke: white;
+            stroke-opacity: 1;
+            stroke-width: 0.6px;
+          }
+
+          &.kargil,
+          &.leh-ladakh,
+          &.jammu,
+          &.doda,
+          &.kathua,
+          &.ramban,
+          &.reasi,
+          &.kishtwar,
+          &.poonch,
+          &.rajouri,
+          &.udhampur,
+          &.samba {
+            fill: none;
+          }
+        }
+
+        .map-hover-label,
+        .map-click-label {
+          pointer-events: none;
+          text {
+            font-size: 1rem;
+            fill: #ffffff;
+            font-weight: bold;
+          }
+          .map-hover-label-stroke,
+          .map-click-label-stroke {
+            stroke: #333;
+            stroke-width: 2px;
+            stroke-linecap: round;
+          }
+        }
+
+        .jnk-label {
+          pointer-events: none;
+          font-size: 1.2rem;
+          &.dark-greyed {
+            text {
+              fill: #a87373;
+            }
+          }
+          text {
+            fill: #a6a6a6;
+          }
+        }
+      }
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  $sm: 250px;
+
+  #person-ticker {
+    pointer-events: none;
+    position: fixed;
+    width: $sm;
+    height: $sm;
+    overflow: visible;
+    // border: 1px solid red;
+    border-radius: 50%;
+    bottom: -($sm / 3);
+    right: -($sm / 3);
+
+    // bottom: 50px;
+    // right: 10px;
+  }
+
+  .map-outer {
+    display: none;
+  }
+}
