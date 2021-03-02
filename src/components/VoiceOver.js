@@ -25,6 +25,7 @@ const VoiceOver = ({
       height: 60,
       cursorWidth: 1.5,
       cursorColor: "#fff",
+      partialRender: true,
     });
 
     wavesurferInit(wavesurferRef.current);
