@@ -332,7 +332,7 @@ const Presentation = () => {
   return (
     <div id="main-container">
       <BackgroundAudio
-        audioFile={"media/background.mp3"}
+        audioFile={"media/background.m4a"}
         muted={window.muted}
       ></BackgroundAudio>
       <PersonTicker
