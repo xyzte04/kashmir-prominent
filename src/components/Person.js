@@ -13,6 +13,9 @@ const Person = ({
   index,
   handlePlay,
   selectedLanguage,
+  englishAudioFileLoaded,
+  urduAudioFileLoaded,
+  thisPersonIsActive,
 }) => {
   // var [thisWavesurfer, setThisWaveSurfer] = useState(null);
   const thisPerson = useRef(null);
@@ -26,12 +29,16 @@ const Person = ({
     <div className="person-container sans" ref={thisPerson}>
       <NameSlide name={name} dateStr={dateStr}></NameSlide>
       <DetailSlide
+        name={name}
         content={content}
         englishAudioFile={englishAudioFile}
         urduAudioFile={urduAudioFile}
         index={index}
         wavesurferInit={wavesurferInit}
         selectedLanguage={selectedLanguage}
+        englishAudioFileLoaded={englishAudioFileLoaded}
+        urduAudioFileLoaded={urduAudioFileLoaded}
+        thisPersonIsActive={thisPersonIsActive}
       ></DetailSlide>
     </div>
   );

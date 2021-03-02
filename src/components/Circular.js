@@ -39,7 +39,7 @@ const NameSlide = ({
         data-person={nm["name"]}
         data-killed-district={nm["district"]}
       >
-        <img src={"images/" + nm["image"]} alt={"alt"}></img>
+        <img src={nm["image"]} alt={"alt"}></img>
         {/* <div className="person-name">{nm[dataProp]}</div> */}
       </div>
     );

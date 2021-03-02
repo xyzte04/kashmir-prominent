@@ -13,7 +13,7 @@ const Toggle = ({ options, toggleFunc, selectedLanguage }) => {
         data-value="english"
         onClick={toggleFunc}
       >
-        English
+        {window.innerWidth <= 500 ? "Eng" : "English"}
       </div>
       <div
         className={

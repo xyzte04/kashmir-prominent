@@ -4,8 +4,8 @@ import "../styles/EndHashtags.scss";
 const EndHashtags = () => {
   return (
     <div className="end-hashtags-container sans">
-      <p class="hashtag">#KashmiriLivesMatter</p>
-      <p class="hashtag">#KashmirRejectsTerrorism</p>
+      <p className="hashtag">#KashmiriLivesMatter</p>
+      <p className="hashtag">#KashmirRejectsTerrorism</p>
     </div>
   );
 };
