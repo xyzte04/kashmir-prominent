@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kashmir-prominent/static/css/main.ed2f7808.chunk.css",
-    "main.js": "/kashmir-prominent/static/js/main.4d438771.chunk.js",
-    "main.js.map": "/kashmir-prominent/static/js/main.4d438771.chunk.js.map",
+    "main.js": "/kashmir-prominent/static/js/main.f3f0b390.chunk.js",
+    "main.js.map": "/kashmir-prominent/static/js/main.f3f0b390.chunk.js.map",
     "runtime-main.js": "/kashmir-prominent/static/js/runtime-main.3fcde04c.js",
     "runtime-main.js.map": "/kashmir-prominent/static/js/runtime-main.3fcde04c.js.map",
     "static/js/2.b9caf3dd.chunk.js": "/kashmir-prominent/static/js/2.b9caf3dd.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.3fcde04c.js",
     "static/js/2.b9caf3dd.chunk.js",
     "static/css/main.ed2f7808.chunk.css",
-    "static/js/main.4d438771.chunk.js"
+    "static/js/main.f3f0b390.chunk.js"
   ]
 }
