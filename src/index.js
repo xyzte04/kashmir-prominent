@@ -22,6 +22,7 @@ var tp = timeParse("%b %d, %Y");
 window.activeAudio = null;
 window.muted = true;
 window.activePerson = null;
+window.selectedLanguage = "english";
 
 var persons = [
   {
@@ -36,7 +37,7 @@ var persons = [
   {
     name: "Justice Nilkanth Ganjoo",
     dateStr: "Nov 4, 1989",
-    image: "images/nilkanth-ganjoo.png",
+    image: "images/ganjoo.png",
     district: "srinagar",
     englishAudioFile: "media/Ganjoo English.m4a",
     urduAudioFile: "media/Ganjoo Urdu.m4a",
@@ -61,10 +62,10 @@ var persons = [
   {
     name: "Mushir Ul Haq",
     dateStr: "Apr 6, 1990",
-    image: "images/mushir-ul-haq.jpg",
+    image: "images/mushir-ul-haq.png",
     district: "srinagar",
     englishAudioFile: "media/Mushir ul haq English.m4a",
-    urduAudioFile: "media/Mushir ul haq English.m4a",
+    urduAudioFile: "media/Musheer ul Haq Urdu.m4a",
     content: `On April 6 1990 an armed rebellion had broken out in Srinagar against Indian rule. A white ambassador car started off from the vice-chancellor’s lodge and made its way towards Sir Syed Gate of the Varsity. Inside the car was Prof Mushir-ul-Haq, the vice-chancellor of the University  of Kashmir, his personal secretary, Abdul Gani and an orderly. Haq was on his way to offer Friday prayers when Four armed men lurking outside the University brought the car to a halt by pointing a gun at the driver and forcibly getting in.
 
       The news of VC's kidnapping was announced in the evening on Doordarshan. On the same day, the student wing of JKLF, claimed responsibility for the kidnapping. Four days later, on April 10,  the bullet riddled bodies of Mr Haq and his personal secretary Gani were found on the road near a canal. Post mortem found 12 bullet wounds on Mr Haq’s body.`,
@@ -72,7 +73,7 @@ var persons = [
   {
     name: "Nurse Sarla Bhat",
     dateStr: "Apr 19, 1990",
-    image: "images/sarla-bhat.jpg",
+    image: "images/sarla-bhat.png",
     district: "srinagar",
     englishAudioFile: "media/Sarla bhat English.m4a",
     urduAudioFile: "media/Sarla Bhat urdu.m4a",
@@ -164,7 +165,7 @@ var persons = [
     image: "images/babar-qadri.png",
     district: "srinagar",
     englishAudioFile: "media/Babar qadri English.m4a",
-    urduAudioFile: "media/Babar qadri English.m4a",
+    urduAudioFile: "media/Babar Qadri Urdu.m4a",
     content: `Babar Qadri was a very well-known young lawyer, activist and media personality, who even floated his own political party-Jammu & Kashmir People's Justice Party.  Qadri was known to take up cases for juvenile justice such as cases where juveniles had been booked by the state. Qadri identified himself as "pro-Kashmir and not anti-India". He was quick to question separatist leaders and politics within Kashmir
 
     In the days leading up to his death, Qadri had said in his social media posts that he feared his killing by Pakistan militants after his name appeared in Pakistani blog on Kashmir, " Kashmir Fightz".
@@ -326,6 +327,8 @@ const Presentation = () => {
   }
 
   function handleToggleLanguage(event) {
+    // setSelectedLanguage(event.target.dataset.value);
+    window.selectedLanguage = event.target.dataset.value;
     setSelectedLanguage(event.target.dataset.value);
   }
 
