@@ -15,6 +15,8 @@ import "./index.scss";
 
 import { select, timeParse } from "d3";
 
+require("intersection-observer");
+
 var tp = timeParse("%b %d, %Y");
 
 // eslint-disable no-unused-vars

@@ -13,7 +13,7 @@ const Head = ({ toggleLanguage }) => {
         <br></br> Here we talk about the 15 of those whose stories still remain
         in the public psyche.
       </p>
-      <div
+      {/* <div
         id="unmute-phone"
         onClick={() => {
           setAudioOn(!audioOn);
@@ -24,7 +24,7 @@ const Head = ({ toggleLanguage }) => {
           alt={audioOn ? "audio-on" : "audio-off"}
         ></img>
         {audioOn ? "Press to mute" : "Page has audio. Press to unmute."}
-      </div>
+      </div> */}
     </div>
   );
 };

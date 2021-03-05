@@ -17,6 +17,12 @@ const BackgroundAudio = ({ audioFile }) => {
 
     wavesurferRef.current.load(audioFile);
 
+    waveformRef.current.data = wavesurferRef.current;
+
+    window.addEventListener("touchstart", () => {
+      wavesurferRef.current.play();
+    });
+
     wavesurferRef.current.on("ready", function () {
       // make sure object stillavailable when file loaded
       wavesurferRef.current.play();
