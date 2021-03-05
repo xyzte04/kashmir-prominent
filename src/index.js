@@ -315,6 +315,12 @@ const Presentation = () => {
   }
 
   function handlePlay(wavesurferInstance) {
+    Array.from(document.getElementsByClassName("waveform-container")).forEach(
+      (el) => {
+        el.data.pause();
+      }
+    );
+
     if (window.activeAudio) {
       window.activeAudio.stop();
     }

@@ -31,6 +31,8 @@ const VoiceOver = ({
 
     wavesurferInit(wavesurferRef.current);
 
+    waveformRef.current.data = wavesurferRef.current;
+
     return () => {
       console.log(name, "Destroy");
       window.activeAudio = null;
@@ -70,7 +72,7 @@ const VoiceOver = ({
 
   return (
     <div className="voice-over container">
-      <div id={thisId} ref={waveformRef}></div>
+      <div id={thisId} className="waveform-container" ref={waveformRef}></div>
     </div>
   );
 };
