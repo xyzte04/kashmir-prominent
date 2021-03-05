@@ -98,7 +98,7 @@ var persons = [
   {
     name: "Wali Muhammad Itoo",
     dateStr: "15 April, 1994",
-    image: "images/wali-muhammad-itoo",
+    image: "images/itoo.png",
     district: "jammu",
     englishAudioFile: "media/Itoo English.m4a",
     urduAudioFile: "media/Wali Muhammad Itoo Urdu.m4a",
