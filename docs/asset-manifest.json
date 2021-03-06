@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/kashmir-prominent/static/css/main.92e507db.chunk.css",
-    "main.js": "/kashmir-prominent/static/js/main.a06a68cd.chunk.js",
-    "main.js.map": "/kashmir-prominent/static/js/main.a06a68cd.chunk.js.map",
-    "runtime-main.js": "/kashmir-prominent/static/js/runtime-main.3fcde04c.js",
-    "runtime-main.js.map": "/kashmir-prominent/static/js/runtime-main.3fcde04c.js.map",
-    "static/js/2.12506f1d.chunk.js": "/kashmir-prominent/static/js/2.12506f1d.chunk.js",
-    "static/js/2.12506f1d.chunk.js.map": "/kashmir-prominent/static/js/2.12506f1d.chunk.js.map",
-    "index.html": "/kashmir-prominent/index.html",
-    "static/css/main.92e507db.chunk.css.map": "/kashmir-prominent/static/css/main.92e507db.chunk.css.map",
-    "static/js/2.12506f1d.chunk.js.LICENSE.txt": "/kashmir-prominent/static/js/2.12506f1d.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.92e507db.chunk.css",
+    "main.js": "/static/js/main.a06a68cd.chunk.js",
+    "main.js.map": "/static/js/main.a06a68cd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a8dadb0c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a8dadb0c.js.map",
+    "static/js/2.12506f1d.chunk.js": "/static/js/2.12506f1d.chunk.js",
+    "static/js/2.12506f1d.chunk.js.map": "/static/js/2.12506f1d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.92e507db.chunk.css.map": "/static/css/main.92e507db.chunk.css.map",
+    "static/js/2.12506f1d.chunk.js.LICENSE.txt": "/static/js/2.12506f1d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3fcde04c.js",
+    "static/js/runtime-main.a8dadb0c.js",
     "static/js/2.12506f1d.chunk.js",
     "static/css/main.92e507db.chunk.css",
     "static/js/main.a06a68cd.chunk.js"
